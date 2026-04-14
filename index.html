@@ -226,8 +226,14 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="חברת שיווק דיגיטלי — שיווק מהיר">
   <meta name="twitter:description" content="רוצים יותר לקוחות? שיווק מהיר מתמחה בקידום אתרים, פרסום בגוגל ופייסבוק וניהול רשתות חברתיות. נבנה עבורכם אסטרטגיה דיגיטלית שמניעה תוצאות אמיתיות.">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+  <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
   
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
+  <style>@font-face{font-display:swap}</style>
 
     <!-- Favicons -->
     <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
@@ -239,9 +245,9 @@
     <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
     <!-- Cookie Consent -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.css">
-    <script src="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.umd.js" defer></script>
     <!-- Mickidum Accessibility Toolbar -->
-    <script src="https://cdn.jsdelivr.net/gh/mickidum/acc_toolbar/acctoolbar/acctoolbar.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/mickidum/acc_toolbar/acctoolbar/acctoolbar.min.js" defer></script>
     <link rel="stylesheet" href="/styles.css">
 
     <style id="zappy-dropdown-submenu-styles">
@@ -786,7 +792,7 @@
     <section class="index-hero-section" data-layout-spec="בית-hero" dir="rtl" data-hero-type="fullscreen-scrim">
   <!-- Background Image -->
   <div class="index-hero-bg">
-    <img data-hero-bg="true" data-placeholder="index-hero-image-1" data-context="A bright, modern digital marketing agency workspace. Wide panoramic shot showing a sleek open-plan office with large monitors displaying Google Analytics dashboards, Facebook Ads Manager, and colorful data charts. A collaborative team of young professionals working together around a conference table with laptops. Natural light streaming through floor-to-ceiling windows. Clean, contemporary aesthetic with blue accent colors. Professional and aspirational atmosphere conveying growth and digital strategy." width="1200" height="700" src="/assets/site-index-hero-image-1.webp" alt="צוות שיווק דיגיטלי עובד יחד בסביבת עבודה מודרנית עם מסכי נתונים וגרפים">
+    <img data-hero-bg="true" data-placeholder="index-hero-image-1" data-context="A bright, modern digital marketing agency workspace. Wide panoramic shot showing a sleek open-plan office with large monitors displaying Google Analytics dashboards, Facebook Ads Manager, and colorful data charts. A collaborative team of young professionals working together around a conference table with laptops. Natural light streaming through floor-to-ceiling windows. Clean, contemporary aesthetic with blue accent colors. Professional and aspirational atmosphere conveying growth and digital strategy." width="1200" height="700" src="/assets/site-index-hero-image-1.webp" fetchpriority="high" alt="צוות שיווק דיגיטלי עובד יחד בסביבת עבודה מודרנית עם מסכי נתונים וגרפים">
   </div>
 
   <!-- Scrim Overlay -->
@@ -1068,7 +1074,7 @@
       <!-- Card 1: Local SEO -->
       <article class="cs-card">
         <div class="cs-card-image-wrap">
-          <img data-placeholder="index-case-studies-image-1" data-context="A local Israeli plumbing or home-services business owner reviewing Google search rankings on a laptop, with a city map and upward trend graph overlay, warm professional office lighting, representing local SEO success for a small business" width="600" height="340" src="/assets/site-index-case-studies-image-1.webp" alt="קידום אורגני לעסק מקומי בגוגל" class="cs-card-img">
+          <img data-placeholder="index-case-studies-image-1" data-context="A local Israeli plumbing or home-services business owner reviewing Google search rankings on a laptop, with a city map and upward trend graph overlay, warm professional office lighting, representing local SEO success for a small business" width="600" height="340" src="/assets/site-index-case-studies-image-1.webp" alt="קידום אורגני לעסק מקומי בגוגל" class="cs-card-img" loading="lazy">
           <span class="cs-card-tag">קידום אורגני מקומי</span>
         </div>
         <div class="cs-card-body">

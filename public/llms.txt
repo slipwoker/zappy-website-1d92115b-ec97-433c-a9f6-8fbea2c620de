@@ -1,6 +1,4 @@
-# שיווק מהיר — Generative Engine Optimization Map
-
-> A digital marketing company specializing in Google search engine optimization and advertising, Facebook marketing campaigns, and social media management. The agency helps businesses grow their online presence through targeted digital strategies across major platforms.
+# Business — Generative Engine Optimization Map
 
 ---
 
@@ -40,21 +38,7 @@ Information about WCAG compliance and accessibility features.
 
 # Business Context (for LLM understanding)
 
-## About שיווק מהיר
-A digital marketing company specializing in Google search engine optimization and advertising, Facebook marketing campaigns, and social media management. The agency helps businesses grow their online presence through targeted digital strategies across major platforms.
-
-## Services/Products
-- קידום אתרים בגוגל (SEO/PPC)
-- פרסום בפייסבוק
-- ניהול רשתות חברתיות
-
-## Target Audience
-- בעלי עסקים קטנים
-- ספקי שירותים מקומיים
-
-## Industry
-שיווק דיגיטלי וקידום אתרים
-
+## About Business
 ---
 
 # Additional Resources
