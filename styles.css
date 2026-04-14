@@ -2463,7 +2463,6 @@ main { margin-top: 0 !important; padding-top: 0 !important; }
 }
 
 
-/* Footer Contrast Guard — overrides dark-on-dark text */
 .site-footer .contact-list a,
 .site-footer .contact-list li,
 .site-footer .contact-list span,
@@ -2473,7 +2472,7 @@ main { margin-top: 0 !important; padding-top: 0 !important; }
 .site-footer .footer-bottom a,
 .site-footer .footer-bottom p,
 .site-footer .footer-bottom span:not(.separator) {
-  color: #6B7280 !important;
+  color: #A0AEC0 !important;
 }
 .site-footer .contact-list a:hover,
 .site-footer .footer-legal a:hover,
@@ -8391,6 +8390,14 @@ to { opacity: 1; transform: rotate(0) scale(1); } }
 .index-hero-section .index-hero-card {
   animation: fadeSlideUp 0.7s ease both;
   animation-delay: 0.1s;
+}
+
+.index-process-section .index-process-metric-val.accent {
+  color: #34D399 !important;
+}
+
+.index-process-section .index-process-metric-val.primary {
+  color: #60A5FA !important;
 }
 
 /* ========== EMPTY SUBMENU HIDING (Auto-added by Zappy) ========== */
