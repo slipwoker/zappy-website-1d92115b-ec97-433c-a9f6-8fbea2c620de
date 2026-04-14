@@ -1,47 +1,63 @@
-# Business — Generative Engine Optimization Map
+# שיווק מהיר — Generative Engine Optimization Map
+
+> A digital marketing company specializing in Google search engine optimization and advertising, Facebook marketing campaigns, and social media management. The agency helps businesses grow their online presence through targeted digital strategies across major platforms.
 
 ---
 
 ## Pages
 
 ### בית
-https://example.com
+https://shivukmahir.zappy5.app
 רוצים יותר לקוחות? שיווק מהיר מתמחה בקידום אתרים, פרסום בגוגל ופייסבוק וניהול רשתות חברתיות. נבנה עבורכם אסטרטגיה דיגיטלית שמניעה תוצאות אמיתיות.
 
 ### שירותים
-https://example.com/services
+https://shivukmahir.zappy5.app/services
 גלו את מגוון שירותי הקידום שלנו: קידום אתרים בגוגל, ניהול רשתות חברתיות, פרסום ממומן בפייסבוק ועוד. כל שירות מותאם אישית לעסק שלכם כדי למקסם את ההחזר על ההשקעה.
 
 ### אודות
-https://example.com/about
+https://shivukmahir.zappy5.app/about
 שיווק מהיר היא חברת שיווק דיגיטלי עם ניסיון עשיר בקידום עסקים ברשת. הכירו את הצוות המומחה שלנו, את הערכים שמנחים אותנו ואת הדרך שבה אנחנו הופכים חזון לתוצאות מדידות.
 
 ### צור קשר
-https://example.com/contact
+https://shivukmahir.zappy5.app/contact
 מוכנים לקחת את הנוכחות הדיגיטלית שלכם לשלב הבא? צרו קשר עם מומחי חברת שיווק דיגיטלי שיווק מהיר לייעוץ חינם ונבנה יחד את האסטרטגיה שתביא לכם יותר לקוחות ויותר הכנסות.
 
 ## Legal & Policy
 
 ### Privacy Policy
-https://example.com/privacy
+https://shivukmahir.zappy5.app/privacy
 Information about how user data is collected, stored, and protected.
 
 ### Terms & Conditions
-https://example.com/terms
+https://shivukmahir.zappy5.app/terms
 Legal terms describing service usage, rights, and policies.
 
 ### Accessibility Statement
-https://example.com/accessibility
+https://shivukmahir.zappy5.app/accessibility
 Information about WCAG compliance and accessibility features.
 
 ---
 
 # Business Context (for LLM understanding)
 
-## About Business
+## About שיווק מהיר
+A digital marketing company specializing in Google search engine optimization and advertising, Facebook marketing campaigns, and social media management. The agency helps businesses grow their online presence through targeted digital strategies across major platforms.
+
+## Services/Products
+- קידום אתרים בגוגל (SEO/PPC)
+- פרסום בפייסבוק
+- ניהול רשתות חברתיות
+
+## Target Audience
+- בעלי עסקים קטנים
+- ספקי שירותים מקומיים
+
+## Industry
+שיווק דיגיטלי וקידום אתרים
+
 ---
 
 # Additional Resources
 
-- **Sitemap**: https://example.com/sitemap.xml
-- **Robots.txt**: https://example.com/robots.txt
+- **Sitemap**: https://shivukmahir.zappy5.app/sitemap.xml
+- **Robots.txt**: https://shivukmahir.zappy5.app/robots.txt
