@@ -1139,7 +1139,166 @@
     <i class="fab fa-whatsapp"></i>
   </a>
   
-  <div data-integration="accessibility:toolbar"></div>
+  <!-- Floating Contact Button -->
+<div class="floating-contact-widget" id="floatingContact">
+  <!-- Sub-options (revealed on hover/click) -->
+  <div class="floating-contact-options" id="floatingOptions">
+    <a href="https://wa.me/[whatsapp_handle]" class="fco-btn fco-whatsapp" aria-label="WhatsApp" target="_blank" rel="noopener">
+      <span class="fco-icon"><i class="fab fa-whatsapp"></i></span>
+      <span class="fco-label">WhatsApp</span>
+    </a>
+    <a href="tel:[business_phone]" class="fco-btn fco-phone" aria-label="טלפון">
+      <span class="fco-icon"><i class="fas fa-phone"></i></span>
+      <span class="fco-label">טלפון</span>
+    </a>
+    <a href="mailto:[business_email]" class="fco-btn fco-email" aria-label="אימייל">
+      <span class="fco-icon"><i class="fas fa-envelope"></i></span>
+      <span class="fco-label">אימייל</span>
+    </a>
+  </div>
+  <!-- Main trigger button -->
+  <button class="fco-main-btn" id="floatingMainBtn" aria-label="צור קשר" aria-expanded="false">
+    <span class="fco-main-icon fco-icon-contact"><i class="fas fa-headset"></i></span>
+    <span class="fco-main-icon fco-icon-close"><i class="fas fa-times"></i></span>
+    <span class="fco-main-label">צור קשר</span>
+  </button>
+</div>
+
+<style>
+.floating-contact-widget {
+  position: fixed;
+  bottom: 32px;
+  left: 24px;
+  z-index: 9998;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0;
+  direction: rtl;
+}
+.fco-main-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: linear-gradient(135deg, #2563EB 0%, #1d4ed8 100%);
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  padding: 14px 22px 14px 18px;
+  font-size: 15px;
+  font-weight: 700;
+  font-family: inherit;
+  cursor: pointer;
+  box-shadow: 0 6px 24px rgba(37,99,235,0.45), 0 2px 8px rgba(0,0,0,0.18);
+  transition: all 0.25s cubic-bezier(.4,0,.2,1);
+  outline: none;
+  position: relative;
+  z-index: 2;
+  letter-spacing: 0.01em;
+}
+.fco-main-btn:hover {
+  background: linear-gradient(135deg, #1d4ed8 0%, #1e40af 100%);
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 10px 32px rgba(37,99,235,0.55), 0 4px 12px rgba(0,0,0,0.2);
+}
+.fco-main-btn .fco-main-icon {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+.fco-main-btn .fco-icon-close {
+  display: none;
+}
+.floating-contact-widget.open .fco-main-btn .fco-icon-contact { display: none; }
+.floating-contact-widget.open .fco-main-btn .fco-icon-close { display: flex; }
+.floating-contact-widget.open .fco-main-btn {
+  background: linear-gradient(135deg, #374151 0%, #1f2937 100%);
+  box-shadow: 0 6px 24px rgba(31,41,55,0.4);
+}
+.floating-contact-options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 12px;
+  pointer-events: none;
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.28s cubic-bezier(.4,0,.2,1), transform 0.28s cubic-bezier(.4,0,.2,1);
+}
+.floating-contact-widget.open .floating-contact-options {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: all;
+}
+.fco-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 50px;
+  padding: 11px 20px 11px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: inherit;
+  text-decoration: none;
+  color: #fff;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+  transition: all 0.2s cubic-bezier(.4,0,.2,1);
+  white-space: nowrap;
+  letter-spacing: 0.01em;
+}
+.fco-btn:hover {
+  transform: translateX(-4px) scale(1.04);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.28);
+}
+.fco-btn .fco-icon {
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.18);
+  flex-shrink: 0;
+}
+.fco-whatsapp { background: linear-gradient(135deg, #25D366 0%, #128C7E 100%); }
+.fco-whatsapp:hover { background: linear-gradient(135deg, #20c05b 0%, #0e7066 100%); color:#fff; }
+.fco-phone { background: linear-gradient(135deg, #2563EB 0%, #1d4ed8 100%); }
+.fco-phone:hover { background: linear-gradient(135deg, #1d4ed8 0%, #1e40af 100%); color:#fff; }
+.fco-email { background: linear-gradient(135deg, #10B981 0%, #059669 100%); }
+.fco-email:hover { background: linear-gradient(135deg, #0ea674 0%, #047857 100%); color:#fff; }
+.floating-contact-options .fco-btn:nth-child(1) { transition-delay: 0.04s; }
+.floating-contact-options .fco-btn:nth-child(2) { transition-delay: 0.08s; }
+.floating-contact-options .fco-btn:nth-child(3) { transition-delay: 0.12s; }
+@media (max-width: 768px) {
+  .floating-contact-widget { bottom: 80px; left: 16px; }
+  .fco-main-btn { padding: 12px 18px 12px 14px; font-size: 14px; }
+  .fco-btn { padding: 10px 16px 10px 12px; font-size: 13px; }
+}
+</style>
+
+<script>
+(function() {
+  var widget = document.getElementById('floatingContact');
+  var btn = document.getElementById('floatingMainBtn');
+  if (!widget || !btn) return;
+  btn.addEventListener('click', function(e) {
+    e.stopPropagation();
+    var isOpen = widget.classList.contains('open');
+    widget.classList.toggle('open');
+    btn.setAttribute('aria-expanded', !isOpen);
+  });
+  document.addEventListener('click', function(e) {
+    if (!widget.contains(e.target)) {
+      widget.classList.remove('open');
+      btn.setAttribute('aria-expanded', 'false');
+    }
+  });
+})();
+</script>
+
+    <div data-integration="accessibility:toolbar"></div>
 
     <script src="/script.js"></script>
 
